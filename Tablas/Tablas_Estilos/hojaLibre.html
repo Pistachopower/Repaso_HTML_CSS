@@ -4,67 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablas</title>
+    <style>
+        table, th, td {
+            border: 1px solid red;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 3px 6px;
+        }
+    </style>
 </head>
 <body>
     <table>
-        <colgroup>
-            <col span="3"  style="background-color: gray;">
-            <col style="background-color: yellow;">
-            <col style="background-color: green;">
-        </colgroup>
 
-        <caption>Alumnos matriculados</caption>
-  
-            
-            <thead> 
-                <tr>
-                    <th>Nombre</th>
-                    <th>Apellidos</th>
-                    <th>Dirección</th>
-                    <th>Teléfono</th>
-                    <th>Email</th>
-                </tr>
-            </thead> 
-            
+        <thead>
+            <tr>
+                <th>Lorem, ipsum dolor.</th>
+                <th>Lorem, ipsum dolor.</th>
+                <th>Lorem, ipsum dolor.</th>
+            </tr>
 
-            <tbody>
-                <tr>
-                    <td>Pepe</td>
-                    <td>Pérez</td>
-                    <td>Aquí</td>
-                    <td>11111111</td>
-                    <td>yosoy@pepe.es</td>
-                </tr>
-                <tr>
-                    <td>Manuel</td>
-                    <td>López</td>
-                    <td>Aquí</td>
-                    <td>22222222</td>
-                    <td>yosoy@manuel.es</td>
-                </tr>
-                <tr>
-                    <td>María</td>
-                    <td>Fernádez</td>
-                    <td>Más allá</td>
-                    <td>33333333</td>
-                    <td>yosoy@maria.es</td>
-                </tr>
-                <tr>
-                    <td>Sara</td>
-                    <td>Gallardo</td>
-                    <td>Más  aquí</td>
-                    <td>44444444</td>
-                    <td>yosoy@sara.es</td>
-                </tr>
-            </tbody>
-    
-            <tfoot>
-                <tr>
-                    <td>Pie de la tabla donde pongo más 
-                        texto para que se vea como crecen
-                    </td>
-                </tr>
-            </tfoot>
-         </table>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td colspan="2">1</td>
+                <!--<td>2</td> 
+                <td>3</td>
+                -->
+                
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+
+            <tr>
+                <td>10</td>
+                <td>11</td>
+                <td rowspan="2">12</td>
+            </tr>
+
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <!--<td>15</td> -->
+            </tr>
+        
+        </tbody>
+    </table>    
 </body>
 </html>
